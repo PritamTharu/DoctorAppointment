@@ -37,7 +37,7 @@ A RESTful API built with **Node.js**, **Express**, and **PostgreSQL** to manage 
 ### Installation Steps
 
 ## Step 1
-- git clone https://github.com
+- git clone https://github.com/PritamTharu/DoctorAppointment.git
 
 ## Step 2
 - cd doctor-appointments
@@ -69,7 +69,7 @@ A RESTful API built with **Node.js**, **Express**, and **PostgreSQL** to manage 
  - INSERT INTO doctors (name, specialization) VALUES ('Dr. Alice Smith', 'Cardiologist'),('Dr. Bob Johnson', 'Dermatologist'),('Dr. Clara Lee', 'Pediatrician');
 - Insert sample appointments
  - INSERT INTO appointments (doctor_id, patient_name, start_time, end_time) VALUES(1, 'John Doe', '2025-08-01 09:00:00', '2025-08-01 09:30:00'),(2, 'Alex Ray', '2025-08-01 11:00:00','2025-08-01 11:30:00');
- 
+
 ## Step 8
 - start the server `npm start` Server will run at http://localhost:3000
 
