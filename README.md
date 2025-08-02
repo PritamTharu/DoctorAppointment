@@ -73,6 +73,27 @@ A RESTful API built with **Node.js**, **Express**, and **PostgreSQL** to manage 
 ## Step 8
 - start the server `npm start` Server will run at http://localhost:3000
 
+## Get List of Doctors
+- **Endpoint:** \`GET localhost:3000/api/v1/doctor
+
+
+## Get Available Slots
+- **Endpoint:** \`GET localhost:3000/api/v1/doctor/1/availableslots?date=2025-08-01
+
+
+## Book Appointment
+- **Endpoint:** \`POST localhost:3000/api/v1/appointment/
+- **Request Body:**
+  \`\`\`json
+  {
+    "doctorId": 1,
+    "patientName": "John Doe",
+    "startTime": "2025-08-02T10:00:00",
+    "endTime": "2025-08-02T10:30:00"
+  }
+  \`\`\`
+
+
 
 
 
