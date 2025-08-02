@@ -84,14 +84,14 @@ A RESTful API built with **Node.js**, **Express**, and **PostgreSQL** to manage 
 ## Book Appointment
 - **Endpoint:** \`POST localhost:3000/api/v1/appointment/
 - **Request Body:**
-  \`\`\`json
+ 
   {
     "doctorId": 1,
     "patientName": "John Doe",
     "startTime": "2025-08-02T10:00:00",
     "endTime": "2025-08-02T10:30:00"
   }
-  \`\`\`
+
 
 
 
