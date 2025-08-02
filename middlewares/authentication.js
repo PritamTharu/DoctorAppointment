@@ -1,7 +1,12 @@
 const jwt = require('jsonwebtoken')
 
+const tokens = jwt.sign({},process.env.JWT_SECRET, {
+  algorithm: "HS256",
+  expiresIn: "1d"
+});
+
 async function verifyToken(req, res, next) {
-    const token = req.cookies.token
+    const token = tokens //req.cookies.token
     if (!token) {
         return res.status(401).json({ error: 'Access Denied. No token provided.' })
     }
